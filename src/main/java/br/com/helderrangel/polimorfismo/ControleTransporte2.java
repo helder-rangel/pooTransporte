@@ -3,16 +3,16 @@ package br.com.helderrangel.polimorfismo;
 import java.util.ArrayList;
 import java.util.Random;
 
-import net.datafaker.Faker;
-
 public class ControleTransporte2 {
-    private static ArrayList<Transporte> listaTransporte = new ArrayList<>();
+    final static ArrayList<Transporte> listaTransporte = new ArrayList<>();
 
     public static void main(String[] args) {
-        TipoTransporte[] opcoes = TipoTransporte.values();
         Random gerador = new Random();
+        //Sorteia uma das opções de Enum aleatoriamente
+        TipoTransporte[] opcoes = TipoTransporte.values();
+
             for(int i =0; i<100; i++){
-                //Sorteia uma das opções de Enum aleatoriamente
+
                 TipoTransporte tipoSorteado = opcoes[gerador.nextInt(opcoes.length)];
 
                 Transporte transporteAtual = switch (tipoSorteado) {

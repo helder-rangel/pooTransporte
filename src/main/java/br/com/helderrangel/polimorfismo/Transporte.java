@@ -15,19 +15,7 @@ public class Transporte {
         return valorBase;
     }
 
-    public int getCapacidade() {
-        return capacidade;
-    }
-
     public double getValorBase() {
         return valorBase;
-    }
-
-    public void setCapacidade(int capacidade) {
-        this.capacidade = capacidade;
-    }
-
-    public void setValorBase(double valorBase) {
-        this.valorBase = valorBase;
     }
 }

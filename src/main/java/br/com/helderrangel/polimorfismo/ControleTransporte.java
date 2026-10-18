@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ControleTransporte {
-    private static ArrayList<Transporte> listaTransporte = new ArrayList();
+    final static ArrayList<Transporte> listaTransporte = new ArrayList<>();
 
 
     public static void main(String[] args) {
